@@ -1,0 +1,46 @@
+Funcion numeroUsuario <- leernumero()
+	Repetir
+		Escribir "Ingrese un numero entre 1 y 100"
+		leer numeroUsuario
+	Hasta Que numeroUsuario >=1 y numeroUsuario<=100
+FinFuncion
+
+Funcion codigo <- comprobarNumero(numeroCorrecto, numeroUsuario)
+	si numeroUsuario=numeroCorrecto Entonces
+		codigo<-0	
+	SiNo
+		
+		si numeroUsuario <= numeroCorrecto Entonces
+			codigo<--1
+		SiNo 
+			codigo<-1	
+		FinSi
+	FinSi
+FinFuncion
+
+Algoritmo Adivinanza
+	
+	numeroCorrecto<-43
+	adivine<-Falso
+	
+	Mientras no adivine Hacer
+		numeroUsuario<-leernumero()
+		
+		Segun comprobarNumero(numeroCorrecto,numeroUsuario) Hacer
+			0:
+				Escribir "Felicitaciones, acerto el numero!!"
+				adivine<-Verdadero
+				
+			-1: 
+				Escribir "Su numero es menor al que debe adivinar"
+				
+				
+			1: 
+				Escribir "Su numero es mayor al que debe adivinar"
+			
+		FinSegun
+	FinMientras
+	
+	
+	
+FinAlgoritmo

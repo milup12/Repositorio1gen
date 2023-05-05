@@ -1,0 +1,23 @@
+Algoritmo Vector
+	
+	Escribir"Un algoritmo que pide al usuario la cantidad de elementos"
+	definir suma, elementos Como entero
+	Escribir "Ingrese la cantidad de elementos que quiere ingresar al vector"
+	Leer elementos
+	Dimension vecto[elementos]
+
+	suma<-0
+	para i<-1 Hasta elementos Hacer
+		Escribir "ingrese el valor para el elemento", i
+		leer vecto[i]
+		suma<-suma+vecto[i]
+			
+	FinPara
+	
+	Escribir "la suma del vector es: ", suma	
+	
+
+	
+	
+	
+FinAlgoritmo

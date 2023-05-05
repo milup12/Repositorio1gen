@@ -1,0 +1,17 @@
+Algoritmo CicloFormativo
+	
+	
+	Escribir "Presione 1 o 2 "
+	Escribir " 1. si la persona es bachiller"
+	Escribir " 2. Si no es bachiller"
+	leer bachiller
+	
+	si bachiller=1 Entonces
+		Escribir "Usted puede entrar a la universidad"
+		
+	SiNo
+		Escribir "Usted debe cursar un examen"
+	FinSi
+	
+	
+FinAlgoritmo

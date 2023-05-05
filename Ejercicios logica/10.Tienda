@@ -1,0 +1,35 @@
+Algoritmo Tienda	
+
+	definir precio, cantidad, descuento Como Real
+	
+	descuento=0.10
+
+	Escribir "Ingrese precio del producto"
+	Leer precio
+	Escribir "Ingrese cantidad que desea comprar"
+	Leer cantidad
+	
+	total=precio*cantidad
+	total_descuento=total-(total*descuento)
+	
+	si total<100 Entonces
+		Escribir "Su compra tiene un total de: ", total
+		
+	SiNo
+		Escribir "Su compra tiene un descuento del 10%: ", total_descuento
+		
+	FinSi
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+	
+	
+	
+FinAlgoritmo

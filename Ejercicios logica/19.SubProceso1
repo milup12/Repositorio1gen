@@ -1,0 +1,44 @@
+
+
+
+SubProceso rellenarAr(num,filas,columnas)
+	
+	Para i<-0 Hasta filas-1 Con Paso 1 Hacer
+		Para j<-0 hasta columnas-1 Con Paso 1 Hacer
+			num[i,j]<-Azar(10)
+			
+		FinPara
+		
+	FinPara
+	
+FinSubProceso
+
+SubProceso MostrarAr(num,filas,columnas)
+	Para i<-0 Hasta filas-1 Con Paso 1 Hacer
+		Para j<-0 Hasta columnas-1 Con Paso 1 Hacer
+			Escribir num[i,j]," " Sin Saltar
+		FinPara
+		
+		Escribir ""
+	FinPara
+	
+FinSubProceso
+
+Algoritmo  SubProceso1
+	Definir num,filas,columnas Como Entero
+	
+	Escribir "Introduzca cantidad de filas"
+	Leer filas
+	Escribir "Introduzca cantidad de columnas"
+	Leer columnas
+	
+	Dimension num[filas, columnas]
+	
+	
+	rellenarAr(num,filas,columnas)
+	MostrarAr(num,filas,columnas)
+	
+	
+	
+FinAlgoritmo
+	

@@ -1,0 +1,13 @@
+Algoritmo AlgoritmoFecha
+	
+	Definir fecha Como entero
+	
+	Dimension fecha1[2] 
+	
+	Escribir "Introduzco fecha"
+	leer fecha
+	
+	
+	
+	
+FinAlgoritmo

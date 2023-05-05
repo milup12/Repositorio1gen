@@ -1,0 +1,96 @@
+Algoritmo InventarioConArreglo
+	
+	Dimension productos(100)
+	Dimension cantidades(100)
+	Dimension precios(100)
+	Dimension posiciones(100)
+	
+	definir i, posicion Como Entero
+	definir producto, respuesta Como Caracter
+	Definir cantidad,precio Como Real
+	
+	posicion<-0
+	
+	Repetir
+		Escribir "Elige una opcion"
+		Escribir "1. Agregar"
+		Escribir "2. Buscar"
+		Escribir "3. Eliminar "
+		Escribir "4. Actualizar"
+		Escribir "5. Salir"
+		leer respuesta
+		
+		Segun respuesta Hacer
+			"1":
+				Escribir "Ingrese Nombre del producto"
+				Leer producto
+				Escribir "Ingrese Cantidad del producto"
+				Leer cantidad
+				Escribir "Ingrese Precio"
+				Leer precio
+				posicion<-posicion+1
+				productos(posicion)<-producto
+				cantidades(posicion)<-cantidad
+				precios(posicion)<-precio
+				
+				Escribir "El producto fue agregado correctamente"
+				
+			"2": Escribir "Ingrese nombre del producto"
+				Leer producto
+				
+				Para i<-1 Hasta posicion con paso 1 Hacer
+					si productos(i)=producto Entonces
+						Escribir "El producto fue encontrado"
+						Escribir productos(i)
+						Escribir cantidades(i)
+						Escribir precios(i)
+						
+					FinSi
+					
+				FinPara
+				
+			"3": 
+				Escribir "Ingrese el nombre de producto a eliminar"
+				Leer producto
+				
+				Para i<-1 Hasta posicion con paso 1 Hacer
+					si productos(i)=producto Entonces
+						
+						productos(i)<-""
+						cantidades(i)<-0
+						precios(i)<-0
+
+						Escribir "El producto fue eliminado"					 
+	
+					FinSi
+
+				FinPara
+				
+			"4":
+				Escribir "Ingrese el producto a actualizar"
+				Leer producto
+				
+				Para i<-1 Hasta posicion con paso 1 Hacer
+					si productos(i)=producto Entonces
+						Escribir "Ingrese la cantidad a actualizar"
+						Leer cantidad
+						cantidades(i)<-cantidad
+						
+						Escribir "Ingrese precio a actualizar"
+						Leer precio
+						precios(i)<-precio
+						
+						Escribir "El producto fue actualizado"
+					FinSi
+				FinPara
+				
+			"5": 
+				Escribir "Se termino el programa"
+				
+			De Otro Modo:
+				
+				Escribir "opcion invalida"
+				
+		FinSegun
+	Hasta Que repuesta="5"
+FinAlgoritmo

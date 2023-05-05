@@ -1,0 +1,47 @@
+Algoritmo Matriz1
+	Escribir "un algoritmo que permite al usuario ingresar valores para crear una matriz de tamaño n*m, y luego muestra la matriz ingresada en pantalla"
+	
+	Definir filas,columnas Como Entero
+	
+	Escribir "Ingrese Fila"
+	leer filas
+	
+	Escribir "Ingrese Columnas"
+	Leer columnas
+	
+	Dimension matriz[filas,columnas]
+	
+	Para i<-0 Hasta filas-1 Hacer
+		
+		Para j<-0 Hasta columnas-1 Hacer
+			
+			Escribir "Ingrese el valor para Fila ", i," Columna " ,j
+			Leer matriz[i,j]
+			
+				
+		FinPara
+		
+	FinPara
+	
+	Para i<-0 Hasta filas-1 Hacer
+		Para j<-0 hasta columnas-1 Hacer
+			Escribir  i+1 "/" ,j+1," - " matriz[i,j]
+			
+		FinPara
+	FinPara
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+FinAlgoritmo

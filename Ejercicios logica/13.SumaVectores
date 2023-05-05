@@ -1,0 +1,31 @@
+Algoritmo Vectoresayb
+	
+	Definir a,b,c Como Entero
+	Dimension a[5]
+	Dimension b[5]
+	Dimension c[5]
+	
+	Escribir "Ingrese los 5 elementos del vector a"
+	
+	para i<-0 hasta 4 Hacer
+		Escribir "Ingrese el elemento ", i, " de a"
+		leer a[i]
+		
+	FinPara
+	
+	para i<-0 hasta 4 Hacer
+		Escribir "Ingrese el elemento", j, "de b"
+		leer b[i]
+	FinPara
+	
+	
+	para i<-0 hasta 4 Hacer
+		c[i] <-a[i]+b[i]
+	FinPara
+	
+	Escribir "La suma de los vectores a y b es: "
+	Para i<-0 hasta 4 Hacer
+		Escribir c[i]
+	FinPara
+
+FinAlgoritmo

@@ -1,0 +1,29 @@
+Algoritmo Contraseña
+	
+	contador<-0
+	acierto<-Falso
+	
+	
+	Mientras (contador <3 y acierto=Falso) Hacer
+		
+		Escribir "Ingrese clave"
+		Leer contrasena
+		
+	
+		
+			Si contrasena='12345' Entonces
+				Escribir "La contraseña es correcta"
+				acierto<-Verdadero
+				
+			SiNo
+				Escribir "La contraseña es incorrecta"
+				Escribir "Intentos: " 3-contador				
+			FinSi
+			
+			contador<-contador+1 
+		FinMientras
+		
+		si contador=3 y acierto = Falso Entonces
+			Escribir "Ya no tiene mas intentos"
+		FinSi
+FinAlgoritmo
